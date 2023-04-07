@@ -1,0 +1,307 @@
+{
+	"id": "6075c796-7a6d-48b7-99e3-9838074ce5fa",
+	"name": "SOFTIE - API TEST",
+	"timestamp": "2023-04-07T10:01:59.157Z",
+	"collection_id": "25150491-05f784d0-844d-473d-9216-06ec632ab585",
+	"folder_id": 0,
+	"environment_id": "25150491-679e2085-e06c-46ef-b93b-15b85681c41c",
+	"totalPass": 11,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-04-07T10:01:57.893Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f817c15d-3eba-4d1e-974b-3e348fa9a543",
+			"name": "Usuniecie posta",
+			"url": "http://localhost:3000/posts/180",
+			"time": 33,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c11002c5-743d-46bf-b1fd-20ef1b421a74",
+			"name": "Nadanie nowego komentarza",
+			"url": "http://localhost:3000/posts",
+			"time": 111,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				111
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "140200f4-218c-482c-a52c-04840890bb53",
+			"name": "Wypełnienie formularza w kalkulatorze BMI",
+			"url": "https://bmi-online.pl/",
+			"time": 232,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				232
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "605f29a4-f931-41c1-aed2-fe17177e8a15",
+			"name": "Pobranie posta o ID=10",
+			"url": "http://localhost:3000/posts/10",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Response JSON as expected": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON as expected": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Response JSON as expected": true
+				}
+			]
+		},
+		{
+			"id": "e71597f0-8642-47d3-94ae-987a03de24f4",
+			"name": "Pobranie 3 pierwszych komentarzy",
+			"url": "http://localhost:3000/comments?_limit=3&_page=3",
+			"time": 19,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e2acc764-ef97-41bb-a6d9-d7a174a4766d",
+			"name": "Modyfikacja posta o ID=1 metoda PUT",
+			"url": "http://localhost:3000/posts/1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Response JSON as expected": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON as expected": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Response JSON as expected": true
+				}
+			]
+		},
+		{
+			"id": "546689bd-f0d4-4f67-82c5-cf54d9af5de8",
+			"name": "Modyfikacja posta o ID=1 metoda PATCH",
+			"url": "http://localhost:3000/posts/1",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response JSON as expected": true
+			},
+			"testPassFailCounts": {
+				"Response JSON as expected": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Response JSON as expected": true
+				}
+			]
+		},
+		{
+			"id": "f40fa832-6252-4a9e-ae72-297b08543648",
+			"name": "Pobranie wszystkich postow",
+			"url": "http://localhost:3000/posts",
+			"time": 22,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b9c1054b-fc78-444c-8ea8-7600766428ab",
+			"name": "Modyfikacja nieistniejacego posta",
+			"url": "http://localhost:3000/posts/1250",
+			"time": 19,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				19
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 488,
+	"collection": {
+		"requests": [
+			{
+				"id": "f817c15d-3eba-4d1e-974b-3e348fa9a543",
+				"method": "DELETE"
+			},
+			{
+				"id": "c11002c5-743d-46bf-b1fd-20ef1b421a74",
+				"method": "POST"
+			},
+			{
+				"id": "140200f4-218c-482c-a52c-04840890bb53",
+				"method": "POST"
+			},
+			{
+				"id": "605f29a4-f931-41c1-aed2-fe17177e8a15",
+				"method": "GET"
+			},
+			{
+				"id": "e71597f0-8642-47d3-94ae-987a03de24f4",
+				"method": "GET"
+			},
+			{
+				"id": "e2acc764-ef97-41bb-a6d9-d7a174a4766d",
+				"method": "PUT"
+			},
+			{
+				"id": "546689bd-f0d4-4f67-82c5-cf54d9af5de8",
+				"method": "PATCH"
+			},
+			{
+				"id": "f40fa832-6252-4a9e-ae72-297b08543648",
+				"method": "GET"
+			},
+			{
+				"id": "b9c1054b-fc78-444c-8ea8-7600766428ab",
+				"method": "PUT"
+			}
+		]
+	}
+}
